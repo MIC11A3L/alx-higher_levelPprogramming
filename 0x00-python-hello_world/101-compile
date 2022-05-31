@@ -1,3 +1,7 @@
 #!/bin/bash
+<<<<<<< HEAD
 echo "Compiling $PYFILE ..."
 /usr/bin/py3compile $PYFILE && mv __pycache__/$(ls __pycache__/) $PYFILE'c' && rmdir __pycache__
+=======
+python3 -m compileall $PYFILE; cp __pycache__/*.pyc "${PYFILE}c"; rm -rf ./__pycache__
+>>>>>>> 659014a6ab2b02e9e15bb4dd6b1e888f8e4d4375
